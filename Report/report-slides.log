@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=latex 2022.4.19)  24 APR 2022 11:15
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=latex 2022.4.19)  24 APR 2022 11:34
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1774,44 +1774,44 @@ LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
 (Font)              scaled to size 11.15991pt on input line 187.
  [3]
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 16.07027pt on input line 194.
+(Font)              scaled to size 16.07027pt on input line 192.
 LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
-(Font)              scaled to size 16.07027pt on input line 194.
+(Font)              scaled to size 16.07027pt on input line 192.
  [4] [5] [6]
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 367.
+(caption)                particular \caption on input line 365.
 See the caption package documentation for explanation.
 
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 7.71893pt on input line 367.
+(Font)              scaled to size 7.71893pt on input line 365.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 10.07397pt on input line 367.
+(Font)              scaled to size 10.07397pt on input line 365.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 7.63599pt on input line 367.
+(Font)              scaled to size 7.63599pt on input line 365.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 5.51999pt on input line 367.
+(Font)              scaled to size 5.51999pt on input line 365.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 10.07397pt on input line 367.
+(Font)              scaled to size 10.07397pt on input line 365.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 7.63599pt on input line 367.
+(Font)              scaled to size 7.63599pt on input line 365.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 5.51999pt on input line 367.
+(Font)              scaled to size 5.51999pt on input line 365.
 Missing character: There is no ^^L in font fourier-mex!
 
-Underfull \hbox (badness 10000) in paragraph at lines 367--367
+Underfull \hbox (badness 10000) in paragraph at lines 365--365
 []|\T1/fnc/m/n/10.95 date,date_block_num,shop_id,item_id,
  []
 
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 9.29993pt on input line 367.
+(Font)              scaled to size 9.29993pt on input line 365.
 Missing character: There is no ^^L in font fourier-mex!
 [7]
 File: figures/Figure1.eps Graphic file (type eps)
  <figures/Figure1.eps>
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 414.
+(caption)                particular \caption on input line 412.
 See the caption package documentation for explanation.
 
 [8
@@ -1821,7 +1821,7 @@ File: figures/Figure2.eps Graphic file (type eps)
  <figures/Figure2.eps>
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 456.
+(caption)                particular \caption on input line 454.
 See the caption package documentation for explanation.
 
 [9]
@@ -1829,7 +1829,7 @@ File: figures/Figure3.eps Graphic file (type eps)
  <figures/Figure3.eps>
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 520.
+(caption)                particular \caption on input line 518.
 See the caption package documentation for explanation.
 
 [10] [11]
@@ -1837,7 +1837,7 @@ File: figures/Figure4.eps Graphic file (type eps)
  <figures/Figure4.eps>
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 615.
+(caption)                particular \caption on input line 613.
 See the caption package documentation for explanation.
 
 [12]
@@ -1845,7 +1845,7 @@ File: figures/Figure5.eps Graphic file (type eps)
  <figures/Figure5.eps>
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 640.
+(caption)                particular \caption on input line 638.
 See the caption package documentation for explanation.
 
 [13]
@@ -1853,7 +1853,7 @@ File: figures/Figure6.eps Graphic file (type eps)
  <figures/Figure6.eps>
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 677.
+(caption)                particular \caption on input line 675.
 See the caption package documentation for explanation.
 
 [14] [15]
@@ -1861,7 +1861,7 @@ File: figures/Figure7.eps Graphic file (type eps)
  <figures/Figure7.eps>
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 720.
+(caption)                particular \caption on input line 718.
 See the caption package documentation for explanation.
 
 [16] [17] [18] [19]
@@ -1869,18 +1869,18 @@ File: figures/Figure8.eps Graphic file (type eps)
  <figures/Figure8.eps>
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 832.
+(caption)                particular \caption on input line 830.
 See the caption package documentation for explanation.
 
 [20] [21]
 Package textcomp Info: Symbol \textrightarrow not provided by
 (textcomp)             font family fnc in TS1 encoding.
-(textcomp)             Default family used instead on input line 904.
+(textcomp)             Default family used instead on input line 902.
  [22] (./report-slides.aux) ) 
 Here is how much of TeX's memory you used:
  53442 strings out of 478269
  1183966 string characters out of 5845880
- 1710847 words of memory out of 5000000
+ 1710788 words of memory out of 5000000
  70607 multiletter control sequences out of 15000+600000
  507708 words of font info for 91 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
