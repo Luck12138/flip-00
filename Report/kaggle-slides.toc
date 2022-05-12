@@ -13,3 +13,6 @@
 \pdcontentsline{0}{15}{genres}
 \pdcontentsline{0}{16}{Year And Revenue}
 \pdcontentsline{0}{17}{Month And Week}
+\pdcontentsline{1}{18}{Feature Selection And Model}
+\pdcontentsline{0}{19}{Feature Selection}
+\pdcontentsline{0}{20}{Model And Result}

@@ -711,6 +711,81 @@ we proposed the concept of group outlying aspects mining.
 \end{note}
 %%==========================================================================================
 \end{slide}
+
+%%
+\section{Feature Selection And Model}
+
+%%==========================================================================================
+%%
+\begin{slide}{Feature Selection}
+  \begin{itemize}
+    \item
+     release_data: release_year, release_day, release_month
+    \item
+     original_language,number_companies,crew_size
+     \item
+     budget,popularity, runtime
+  \end{itemize}
+  \vspace{0.2cm}
+  \begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.6\textwidth,height=0.42\textwidth]{figures/feature1.eps}\\
+    \caption{Feature}
+  \end{figure}
+ %%==========================================================================================
+\begin{note}
+However,
+there is such a phenomenon in real life.
+Doctors desire to identify the characteristics between
+a group of cancer patients and normal people.
+NBA coaches are passionate about exploring the obvious strengths and
+weaknesses of the team compared with other teams.
+
+Based on such a phenomenon in the real life,
+we proposed the concept of group outlying aspects mining.
+\end{note}
+%%==========================================================================================
+\end{slide}
+
+%%==========================================================================================
+%%
+\begin{slide}{Model And Result}
+  \begin{itemize}
+    \item
+    Random Forest
+    \begin{itemize}
+      \item
+      A random forest is a classifier that contains multiple decision trees and whose
+output class is determined by the plurality of the classes of the individual tree
+outputs.
+    \end{itemize}
+    \item
+    RMSE
+    \begin{itemize}
+      \item
+      The root mean square error is the square root of the ratio of the deviation
+       between the predicted value and the true value to the number of observations n.
+    \end{itemize}
+    \item
+    Train set: 0.8 , Test set: 0.2
+    \item
+    Score:1.19
+  \end{itemize}
+ %%==========================================================================================
+\begin{note}
+However,
+there is such a phenomenon in real life.
+Doctors desire to identify the characteristics between
+a group of cancer patients and normal people.
+NBA coaches are passionate about exploring the obvious strengths and
+weaknesses of the team compared with other teams.
+
+Based on such a phenomenon in the real life,
+we proposed the concept of group outlying aspects mining.
+\end{note}
+%%==========================================================================================
+\end{slide}
+
 \end{document}
 
 \endinput
