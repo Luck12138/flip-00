@@ -1,201 +1,156 @@
 %=================================================================
 \section{Introduction}\label{sec-intro}
 
+\subsection{Description}
+In a world… where movies made an estimated \$41.7 billion in 2018, the film industry is more popular than ever. 
+But what movies make the most money at the box office? How much does a director matter? Or the budget? For some movies, 
+it's "You had me at 'Hello.'" For others, the trailer falls short of expectations and you think "What we have here is a
+failure to communicate." 
+\subsection{Target}
+In this competition, you're presented with metadata on over 7,000 past films from The Movie Database to try and predict 
+their overall worldwide box office revenue. Data points provided include cast, crew, plot keywords, budget, posters,
+ release dates, languages, production companies, and countries. You can collect other publicly available data to use 
+ in your model predictions, but in the spirit of this competition, use only data that would have been available before 
+ a movie's release. 
 
-%\todo{Narrow down to a topic; Dig a hole; Fill the hole}
-\todo{Formula for Introduction}
+ \section{Data Processing} \label{sec-preliminaries}
+ \subsection{Data Description}
+ In the dataset, it includes 7,398 movies and various metadata from the Movie
+Database (TMDB), Movies are labeled with id.Data points include cast,crew,plot keywords, budget, posters, release dates, 
+languages, production companies, and countries.Predict the worldwide revenue for 4398 movies.
 
-
-
-%\gangli{``narrow in on topic'' reminds you 
-%that readers and reviewers only know that this is a AI or HTM research paper (and maybe have read the title/abstract). 
-%You need to help them figure out what topic and area of research paper this is. 
-%You _don't_ need to wax poetic about the topic's importance.}
-
-%\gangli{`dig a hole'' reminds you that 
-%you need to convince the reader that there's a problem with the state of the world. 
-%Prior work may exist but it's either missing something important or there's a missing opportunity. 
-%The reader should be drooling for a bright future just out of reach.}
-
-%\gangli{``fill the hole'' reminds you to show the reader 
-%how and why the paper they're reading will fix these problems and deliver us into a better place. 
-%You don't need a whirlwind summary of the technical details, 
-%but you need readers convinced (and in a good mood) to keep reading.}
-
-\gangli{A good paper introduction is fairly formulaic. 
-If you follow a simple set of rules, 
-you can write a very good introduction. 
-The following outline can be varied. 
-For example, 
-you can use two paragraphs instead of one, 
-or you can place more emphasis on one aspect of the intro than another. 
-But in all cases, 
-all of the points below need to be covered in an introduction, 
-and in most papers, 
-you don't need to cover anything more in an introduction.}
-
-
-
-%\todo{The importance of the area}
-%\blindtext
-\todo{Motivation}
-At a high level, 
-what is the problem area you are working in and why is it important? 
-It is important to set the larger context here. 
-Why is the problem of interest and importance to the larger community?
-
-
-%\todo{The problems faced by most current methods}
-%\blindtext
-\todo{What is the specific problem considered in this paper?}
-This paragraph narrows down the topic area of the paper. 
-In the first paragraph you have established general context and importance. 
-Here you establish specific context and background.
-
-%\todo{What can be addressed by existing methods; Why those problems are challenges to existing methods?}
-%\blindtext
-\todo{Contribution}
-"In this paper, we show that ...". 
-This is the key paragraph in the intro - you summarize, 
-in one paragraph, 
-what are the main contributions of your paper given the context 
-you have established in paragraphs 1 and 2. 
-What is the general approach taken? 
-Why are the specific results significant? 
-This paragraph must be really good. 
-
-You should think about how to structure these one or 
-two paragraph summaries of what your paper is all about. 
-If there are two or three main results, 
-then you might consider itemizing them with bullets or in test. 
+\subsection{Basic Information of Data}
 \begin{itemize}
-	\item e.g., First ...
-	\item e.g., Second ...
-	\item e.g., Third ...
+	\smallskip
+	\item \textbf{train.csv} -- it contains 3000 rows and 23 columns.
+	\smallskip
+	\item \textbf{test.csv} -- it contains 4398 rows and 22 columns. Compared with the train data, there are fewer "revenue" column.
+	\smallskip
+	\item \textbf{sample\_submission.csv} -- it clarifies the data submission format. It just contains 2 columns that is "id" and "revenue".
 \end{itemize}
-If the results fall broadly into two categories, 
-you can bring out that distinction here. 
-For example, "Our results are both theoretical and applied in nature. 
-(two sentences follow, one each on theory and application)"
+\subsection{Data Fields}  
+The following is basic information of data. \\
+\begin{tabular}{p{3cm}p{2cm}p{7cm}}
+  \toprule
+  \centering
+  Name
+  & Description & Attribute \\
+  \midrule
+  \centering 
+  train.csv
+  & {Training set(Movies from $1970$-$2018$)} &  {id,belongs\_to\_collection,budget,genres,homepage,
+  imdb\_id,original\_language,original\_title,overview,
+  popularity,poster\_path,production\_companies,
+  production\_countries,release\_date,runtime,
+  spoken\_languages,status,tagline,title,Keywords,
+  cast,crew,revenue}  \\
+  \centering 
+  test.csv
+  & {Test set(Predict revenue)} &  {id,belongs\_to\_collection,budget,genres,homepage,
+  imdb\_id,original\_language,original\_title,overview,
+  popularity,poster\_path,production\_companies,
+  production\_countries,release\_date,runtime,
+  spoken\_languages,status,tagline,title,Keywords,
+  cast,crew} \\
+  \centering
+  sample\_submission.csv &  {Format of submission} &  {id,revenue} \\
+  \bottomrule
+  \end{tabular}
+  \subsection{Numerical features} 
+  \begin{itemize}
+    \item  There are $4$ numerical features in total.
+    \smallskip
+    \item  The minimum of budget is $0$.
+    \smallskip
+    \item There are some missing values in the runtime, and the minimum of runtime is $0$.
+  \end{itemize}
 
-%\todo{What provides the motivation of this work? What are the research issues? What is the rationale of this work? }
-%\blindtext
-\todo{At a high level what are the differences in what you are doing, and what others have done? }
-Keep this at a high level, 
-you can refer to a future section where specific details and differences will be given. 
-But it is important for the reader to know at a high level, 
-what is new about this work compared to other work in the area.
-
-%\todo{What we have done and what are the contributions.}
-%\blindtext
-\todo{A roadmap for the rest of the paper}
-"The remainder of this paper is structured as follows..." 
-Give the reader a roadmap for the rest of the paper. 
-Avoid redundant phrasing, 
-"In Section 2, In section 3, ... In Section 4, ... " etc.
-
-\gangli{A few general tips:
-Don't spend a lot of time into the introduction 
-telling the reader about what you don't do in the paper. 
-Be clear about what you do do.
-Does each paragraph have a theme sentence that sets the stage for the entire paragraph? Are the sentences and topics in the paragraph all related to each other?}
-
-\gangli{Does each paragraph have a theme 
-sentence that sets the stage for the entire paragraph? 
-Are the sentences and topics in the paragraph all related to each other?}
-
-\gangli{Do all of your tenses match up in a paragraph?}
-
-Test citation~\cite{BL12J01}. 
-\begin{JournalOnly}
-and~\citep{BJL11J01} or~\citet{BJL11J01}.
-\end{JournalOnly}
-
-This is for~\cref{tbl:overall-experiments}, 
-\todo[fancyline]{Testing.}
-and this is for~\cref{sec-conclusions}.
-\todo[noline]{A note with no line back to the text.}%
-\gangli{This is comment from Gang.}
-\qwu{Response from QW}
-
-Number:
-\num{123}.
-\numlist{10;30;50;70},
-\numrange{10}{30},
-\SIlist{10;30;45}{\metre},
-and
-\SI{10}{\percent}
-
-\missingfigure[figcolor=white]{Testing figcolor}
+  \begin{figure}[htbp]
+    \includegraphics[scale=0.5]{./figures/describe.eps}
+    \caption{Numerical features}
+  \end{figure}
 
 
-\begin{ConferenceOnly}
-We have \SI{10}{\hertz},
-\si{\kilogram\metre\per\second},
-the range: \SIrange{10}{100}{\hertz}.
-$\nicefrac[]{1}{2}$.
-
-\missingfigure{Make a sketch of the structure of a trebuchet.}
-
-\end{ConferenceOnly}
-
-
-For~\cref{eq:test},
-as shown below:
-
-\begin{equation}\label{eq:test}
-a = b \times \sqrt{ab}
-\end{equation}
-
-\blindmathpaper
-
-\section{Preliminaries} \label{sec-preliminaries}
-
-\blindtext
-
-\gliMarker  %TODO: GLi Here
+\subsection{Missing Value} 
+Below is the missing field information. \\
+\begin{figure}[htbp]
+  \includegraphics[scale=0.4]{./figures/MissingValue.eps}
+  \caption{Missing values analysis}
+\end{figure}
+We're going to remove some characteristic dimensions,such as columns that contain many null-valued features,
+columns from which Prediction of Revenue does not affect.
 
 
-\section{Method} \label{sec-method}
 
-\blindtext
-\blindlist{itemize}[3]
-\blinditemize
-\blindenumerate
+\subsection{Process Genres}
+Genres contains all type names and TMDB ids in JSON format.
+The type information in JSON format needs to be parsed. The following figure shows the parsing result. \\
 
-\blindmathtrue
-\blindmathfalse
-\blinddescription
-
-\qwuMarker %TODO: QWu Here
-
-\section{Experiment and Analysis} \label{sec-experiment}
+\begin{figure}[htbp]
+  \includegraphics[scale=0.5]{./figures/genres.eps}
+  \caption{Genres}
+\end{figure}
 
 
-\begin{table}  \centering
-  \caption{Precision Comparison on Event Detection Methods}
-  \label{tbl:overall-experiments}
-  \begin{tabular}{cccc}
-\toprule
-    % after \\: \hline or \cline{col1-col2} \cline{col3-col4} ...
-    & OR Event Detection & AC Event Detection & TC Event Detection \\
-\midrule
-    precision & 0.83 & 0.69 & 0.46 \\
-    recall & 0.68 & 0.48 & 0.36 \\
-    F-score & 0.747 & 0.57 & 0.4 \\
-\bottomrule
-\end{tabular}
-\end{table}
+\subsection{Release date}
+The Date data of the Date type needs to be parsed into three dimensions: release year, release month, and release Date. 
+The analysis result is shown in the following figure. \\
+
+\begin{figure}[htbp]
+  \includegraphics[scale=0.4]{./figures/date1.eps}
+  \caption{Date}
+\end{figure}
 
 
-\section{Conclusions} \label{sec-conclusions}
 
-\blindtext
+\subsection{Data visualization}
+Next, I will make a visual analysis of the impact of budget, popularity, Genres,runtime and date on revenue.
+ \\
 
-\section*{Acknowledgement}
+\begin{figure}[htbp]
+  \includegraphics[scale=0.4]{./figures/budget2.eps}
+  \caption{budget}
+\end{figure}
 
-\lipsum[1]
+\begin{figure}[htbp]
+  \includegraphics[scale=0.4]{./figures/popular2.eps}
+  \caption{Popularity}
+\end{figure}
+
+\begin{figure}[htbp]
+  \includegraphics[width=0.9\textwidth,height=0.5\textwidth]{./figures/genres1.eps}
+  \caption{Genres}
+\end{figure}
 
 
-The authors would like to thank \ldots
+\begin{figure}[htbp]
+  \includegraphics[width=0.9\textwidth,height=0.5\textwidth]{./figures/runtime1.eps}
+  \caption{Runtime}
+\end{figure}
 
+\begin{figure}[htbp]
+  \includegraphics[width=0.9\textwidth,height=0.5\textwidth]{./figures/year2.eps}
+  \caption{Date}
+\end{figure}
+
+Through correlation analysis of data visualization, we can find that there should be a positive correlation 
+between budget and revenue, and the correlation between popularity and revenue should not be as strong as budget.
+In addition, runtime and release dates should also have an impact on revenue.  \\
+
+
+\section{Feature Selection And Model} \label{sec-preliminaries}
+\subsection{Release date}
+I selected a total of 9 dimensions, including release year, release month, release week, language, number of companies, 
+number of crew, budget, popularity and Runtime.  \\
+
+\subsection{Model and Result}
+I used a random forest to train the data.A random forest is a classifier that contains multiple decision trees and whose output class is
+determined by the plurality of the classes of the individual tree outputs.  \\
+I use the root mean square error to measure the prediction gap.The root mean square error is the square root of the ratio of the deviation between the predicted
+value and the true value to the number of observations n. In addition,I divided the data set into 0.8 training data set and 0.2 test data set. \\
+Score:1.19 \\
+
+\section{Conclusion} \label{sec-preliminaries}
+The effect of the model is general, the main reason is that the selected features
+are not comprehensive enough, and the learning and thinking of feature
+selection should be strengthened in the future.
