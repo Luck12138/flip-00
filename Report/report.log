@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.4.19)  14 MAY 2022 09:55
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.4.19)  14 MAY 2022 10:09
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1443,11 +1443,11 @@ Package epstopdf Info: Source file: <./graphics/logos/tulip-logo.eps>
 (epstopdf)                    date: 2022-04-21 19:26:59
 (epstopdf)                    size: 21510 bytes
 (epstopdf)             Command: <repstopdf --outfile=./graphics/logos/tulip-logo-eps-converted-to.pdf ./graphics/logos/tulip-logo.eps>
-(epstopdf)             \includegraphics on input line 71.
+(epstopdf)             \includegraphics on input line 70.
 Package epstopdf Info: Output file is already uptodate.
 File: ./graphics/logos/tulip-logo-eps-converted-to.pdf Graphic file (type pdf)
 <use ./graphics/logos/tulip-logo-eps-converted-to.pdf>
-Package pdftex.def Info: ./graphics/logos/tulip-logo-eps-converted-to.pdf  used on input line 71.
+Package pdftex.def Info: ./graphics/logos/tulip-logo-eps-converted-to.pdf  used on input line 70.
 (pdftex.def)             Requested size: 7.92348pt x 10.79993pt.
 
 
