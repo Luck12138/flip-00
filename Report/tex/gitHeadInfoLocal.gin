@@ -1,0 +1,17 @@
+\usepackage[%
+        shash={71ac087},
+        lhash={71ac0876e8d55e6fb34260f54649495e61059165},
+        authname={Luck12138},
+        authemail={1623082663@qq.com},
+        authsdate={2022-05-13},
+        authidate={2022-05-13 16:21:26 +0800},
+        authudate={1652430086},
+        commname={Luck12138},
+        commemail={1623082663@qq.com},
+        commsdate={2022-05-13},
+        commidate={2022-05-13 16:21:26 +0800},
+        commudate={1652430086},
+        refnames={ (HEAD -> develop)},
+        firsttagdescribe={71ac087},
+        reltag={71ac087}
+    ]{gitexinfo}

@@ -4,7 +4,8 @@
 % Version control information
 %
 %=================================================================
-\usepackage{gitinfo2}
+% \usepackage{gitinfo2}
+\usepackage[local]{gitinfo2}
 %=================================================================
 \usepackage{fancyhdr}
 \pagestyle{fancy}
