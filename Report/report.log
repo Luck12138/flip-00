@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.4.19)  14 MAY 2022 10:09
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.4.19)  14 MAY 2022 10:11
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -963,11 +963,11 @@ Package: eso-pic 2020/10/14 v3.0a eso-pic (RN)
 \ESO@tempdima=\dimen336
 \ESO@tempdimb=\dimen337
 )
-
-Package gitinfo2 Warning: I can't find the file 'gitHeadLocal.gin'.
-(gitinfo2)                All git metadata has been set to '(None)'.
-
-) (d:/software/texlive/2022/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+Package gitinfo2 Info: gitinfo2 found : ../.git/gitHeadInfo.gin
+(gitinfo2)              on input line 128.
+ (../.git/gitHeadInfo.gin) (d:/software/texlive/2022/texmf-dist/tex/latex/gitinfo2/gitexinfo.sty
+Package: gitexinfo 2015/11/22 v2.0.7 Auxiliary package for gitinfo2
+)) (d:/software/texlive/2022/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
 Package: fancyhdr 2021/01/28 v4.0.1 Extensive control of page headers and footers
 \f@nch@headwidth=\skip90
 \f@nch@O@elh=\skip91
@@ -1004,7 +1004,8 @@ Package: mhsetup 2021/03/18 v1.4 programming setup (MH)
 \c@example=\count401
 \c@definition=\count402
 \c@Algorithms=\count403
-)) (./report.aux)
+))
+No file report.aux.
 \openout1 = `report.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 24.
@@ -1026,7 +1027,7 @@ LaTeX Font Info:    ... okay on input line 24.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 24.
 LaTeX Font Info:    ... okay on input line 24.
 LaTeX Font Info:    Trying to load font information for U+msa on input line 24.
- (d:/software/texlive/2022/texmf-dist/tex/latex/amsfonts/umsa.fd
+(d:/software/texlive/2022/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Trying to load font information for U+msb on input line 24.
@@ -1065,7 +1066,6 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 24.
 LaTeX Info: Redefining \pageref on input line 24.
 LaTeX Info: Redefining \nameref on input line 24.
- (./report.out) (./report.out)
 \@outlinefile=\write6
 \openout6 = `report.out'.
 
@@ -1090,7 +1090,7 @@ File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman (
 File: translations-basic-dictionary-english.trsl (english translation file `translations-basic-dictionary')
 )
 Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 24.
- (./tex/abstract.tex) (./report.toc)
+ (./tex/abstract.tex)
 \tf@toc=\write7
 \openout7 = `report.toc'.
 
@@ -1190,7 +1190,7 @@ Package epstopdf Info: Source file: <./graphics/logos/tulip-logo.eps>
 (epstopdf)             Command: <repstopdf --outfile=./graphics/logos/tulip-logo-eps-converted-to.pdf ./graphics/logos/tulip-logo.eps>
 (epstopdf)             \includegraphics on input line 65.
 Package epstopdf Info: Output file is already uptodate.
-<./graphics/logos/tulip-logo-eps-converted-to.pdf, id=66, 456.70625pt x 622.325pt>
+<./graphics/logos/tulip-logo-eps-converted-to.pdf, id=18, 456.70625pt x 622.325pt>
 File: ./graphics/logos/tulip-logo-eps-converted-to.pdf Graphic file (type pdf)
 <use ./graphics/logos/tulip-logo-eps-converted-to.pdf>
 Package pdftex.def Info: ./graphics/logos/tulip-logo-eps-converted-to.pdf  used on input line 65.
@@ -1210,7 +1210,7 @@ Package epstopdf Info: Source file: <./figures/describe.eps>
 (epstopdf)             Command: <repstopdf --outfile=./figures/describe-eps-converted-to.pdf ./figures/describe.eps>
 (epstopdf)             \includegraphics on input line 69.
 Package epstopdf Info: Output file is already uptodate.
-<./figures/describe-eps-converted-to.pdf, id=78, 598.235pt x 299.1175pt>
+<./figures/describe-eps-converted-to.pdf, id=36, 598.235pt x 299.1175pt>
 File: ./figures/describe-eps-converted-to.pdf Graphic file (type pdf)
 <use ./figures/describe-eps-converted-to.pdf>
 Package pdftex.def Info: ./figures/describe-eps-converted-to.pdf  used on input line 69.
@@ -1224,7 +1224,7 @@ Package epstopdf Info: Source file: <./figures/MissingValue.eps>
 (epstopdf)             Command: <repstopdf --outfile=./figures/MissingValue-eps-converted-to.pdf ./figures/MissingValue.eps>
 (epstopdf)             \includegraphics on input line 77.
 Package epstopdf Info: Output file is already uptodate.
-<./figures/MissingValue-eps-converted-to.pdf, id=79, 283.0575pt x 516.93124pt>
+<./figures/MissingValue-eps-converted-to.pdf, id=37, 283.0575pt x 516.93124pt>
 File: ./figures/MissingValue-eps-converted-to.pdf Graphic file (type pdf)
 <use ./figures/MissingValue-eps-converted-to.pdf>
 Package pdftex.def Info: ./figures/MissingValue-eps-converted-to.pdf  used on input line 77.
@@ -1262,7 +1262,7 @@ Package epstopdf Info: Source file: <./figures/genres.eps>
 (epstopdf)             Command: <repstopdf --outfile=./figures/genres-eps-converted-to.pdf ./figures/genres.eps>
 (epstopdf)             \includegraphics on input line 90.
 Package epstopdf Info: Output file is already uptodate.
-<./figures/genres-eps-converted-to.pdf, id=90, 322.20375pt x 446.66875pt>
+<./figures/genres-eps-converted-to.pdf, id=50, 322.20375pt x 446.66875pt>
 File: ./figures/genres-eps-converted-to.pdf Graphic file (type pdf)
 <use ./figures/genres-eps-converted-to.pdf>
 Package pdftex.def Info: ./figures/genres-eps-converted-to.pdf  used on input line 90.
@@ -1281,7 +1281,7 @@ Package epstopdf Info: Source file: <./figures/date1.eps>
 (epstopdf)             Command: <repstopdf --outfile=./figures/date1-eps-converted-to.pdf ./figures/date1.eps>
 (epstopdf)             \includegraphics on input line 100.
 Package epstopdf Info: Output file is already uptodate.
-<./figures/date1-eps-converted-to.pdf, id=91, 455.7025pt x 354.32375pt>
+<./figures/date1-eps-converted-to.pdf, id=51, 455.7025pt x 354.32375pt>
 File: ./figures/date1-eps-converted-to.pdf Graphic file (type pdf)
 <use ./figures/date1-eps-converted-to.pdf>
 Package pdftex.def Info: ./figures/date1-eps-converted-to.pdf  used on input line 100.
@@ -1300,7 +1300,7 @@ Package epstopdf Info: Source file: <./figures/budget2.eps>
 (epstopdf)             Command: <repstopdf --outfile=./figures/budget2-eps-converted-to.pdf ./figures/budget2.eps>
 (epstopdf)             \includegraphics on input line 111.
 Package epstopdf Info: Output file is already uptodate.
-<./figures/budget2-eps-converted-to.pdf, id=92, 853.1875pt x 528.97626pt>
+<./figures/budget2-eps-converted-to.pdf, id=52, 853.1875pt x 528.97626pt>
 File: ./figures/budget2-eps-converted-to.pdf Graphic file (type pdf)
 <use ./figures/budget2-eps-converted-to.pdf>
 Package pdftex.def Info: ./figures/budget2-eps-converted-to.pdf  used on input line 111.
@@ -1333,7 +1333,7 @@ Package epstopdf Info: Source file: <./figures/popular2.eps>
 (epstopdf)             Command: <repstopdf --outfile=./figures/popular2-eps-converted-to.pdf ./figures/popular2.eps>
 (epstopdf)             \includegraphics on input line 116.
 Package epstopdf Info: Output file is already uptodate.
-<./figures/popular2-eps-converted-to.pdf, id=103, 755.82375pt x 474.77374pt>
+<./figures/popular2-eps-converted-to.pdf, id=65, 755.82375pt x 474.77374pt>
 File: ./figures/popular2-eps-converted-to.pdf Graphic file (type pdf)
 <use ./figures/popular2-eps-converted-to.pdf>
 Package pdftex.def Info: ./figures/popular2-eps-converted-to.pdf  used on input line 116.
@@ -1347,7 +1347,7 @@ Package epstopdf Info: Source file: <./figures/genres1.eps>
 (epstopdf)             Command: <repstopdf --outfile=./figures/genres1-eps-converted-to.pdf ./figures/genres1.eps>
 (epstopdf)             \includegraphics on input line 121.
 Package epstopdf Info: Output file is already uptodate.
-<./figures/genres1-eps-converted-to.pdf, id=104, 1104.125pt x 733.74126pt>
+<./figures/genres1-eps-converted-to.pdf, id=66, 1104.125pt x 733.74126pt>
 File: ./figures/genres1-eps-converted-to.pdf Graphic file (type pdf)
 <use ./figures/genres1-eps-converted-to.pdf>
 Package pdftex.def Info: ./figures/genres1-eps-converted-to.pdf  used on input line 121.
@@ -1361,7 +1361,7 @@ Package epstopdf Info: Source file: <./figures/runtime1.eps>
 (epstopdf)             Command: <repstopdf --outfile=./figures/runtime1-eps-converted-to.pdf ./figures/runtime1.eps>
 (epstopdf)             \includegraphics on input line 127.
 Package epstopdf Info: Output file is already uptodate.
-<./figures/runtime1-eps-converted-to.pdf, id=105, 1118.1775pt x 683.55376pt>
+<./figures/runtime1-eps-converted-to.pdf, id=67, 1118.1775pt x 683.55376pt>
 File: ./figures/runtime1-eps-converted-to.pdf Graphic file (type pdf)
 <use ./figures/runtime1-eps-converted-to.pdf>
 Package pdftex.def Info: ./figures/runtime1-eps-converted-to.pdf  used on input line 127.
@@ -1375,7 +1375,7 @@ Package epstopdf Info: Source file: <./figures/year2.eps>
 (epstopdf)             Command: <repstopdf --outfile=./figures/year2-eps-converted-to.pdf ./figures/year2.eps>
 (epstopdf)             \includegraphics on input line 132.
 Package epstopdf Info: Output file is already uptodate.
-<./figures/year2-eps-converted-to.pdf, id=106, 1122.1925pt x 479.7925pt>
+<./figures/year2-eps-converted-to.pdf, id=68, 1122.1925pt x 479.7925pt>
 File: ./figures/year2-eps-converted-to.pdf Graphic file (type pdf)
 <use ./figures/year2-eps-converted-to.pdf>
 Package pdftex.def Info: ./figures/year2-eps-converted-to.pdf  used on input line 132.
@@ -1467,22 +1467,22 @@ Package rerunfilecheck Warning: File `report.out' has changed.
 (rerunfilecheck)                or use package `bookmark'.
 
 Package rerunfilecheck Info: Checksums for `report.out':
-(rerunfilecheck)             Before: 7B29104E45B61624A6DFE8DEE3D7A25C;1863
+(rerunfilecheck)             Before: <no file>
 (rerunfilecheck)             After:  38622F77CA71D0795A1D7BEF1E225FD6;2502.
  ) 
 Here is how much of TeX's memory you used:
- 38786 strings out of 478268
- 787706 string characters out of 5845854
- 1189161 words of memory out of 5000000
- 56081 multiletter control sequences out of 15000+600000
+ 38830 strings out of 478268
+ 788819 string characters out of 5845854
+ 1190889 words of memory out of 5000000
+ 56127 multiletter control sequences out of 15000+600000
  478375 words of font info for 92 fonts, out of 8000000 for 9000
  1302 hyphenation exceptions out of 8191
  120i,14n,134p,999b,878s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {d:/software/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<d:/software/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><d:/software/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><d:/software/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><d:/software/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><d:/software/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><d:/software/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb><d:/software/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><d:/software/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb><d:/software/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb><d:/software/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on report.pdf (7 pages, 676215 bytes).
+Output written on report.pdf (7 pages, 676324 bytes).
 PDF statistics:
- 194 PDF objects out of 1000 (max. 8388607)
- 143 compressed objects within 2 object streams
- 34 named destinations out of 1000 (max. 500000)
- 21151 words of extra memory for PDF output out of 24883 (max. 10000000)
+ 156 PDF objects out of 1000 (max. 8388607)
+ 105 compressed objects within 2 object streams
+ 33 named destinations out of 1000 (max. 500000)
+ 21055 words of extra memory for PDF output out of 24883 (max. 10000000)
 
